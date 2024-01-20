@@ -1,5 +1,7 @@
 
 
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer>
@@ -11,58 +13,44 @@ export default function Footer() {
           {/* 1st block */}
           <div className="sm:col-span-12 lg:col-span-3">
             <div className="mb-2">
-              xd
+              linki
             </div>
             <div className="text-sm text-gray-600">
               <a href="#0" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</a> · <a href="#0" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</a>
             </div>
           </div>
 
-          {/* 2nd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Products</h6>
+        
+
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span3">
+            <h6 className="text-gray-800 font-medium mb-2">Dla dzieci i młodziezy</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Web Studio</a>
+                <Link href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Link</Link>
               </li>
+            </ul>
+          </div>
+
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
+            <h6 className="text-gray-800 font-medium mb-2">Podstawowe</h6>
+            <ul className="text-sm">
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">DynamicBox Flex</a>
+                <Link href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Link</Link>
               </li>
+            </ul>
+          </div>
+
+          <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
+            <h6 className="text-gray-800 font-medium mb-2">Zawodowe</h6>
+            <ul className="text-sm">
               <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Programming Forms</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Integrations</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Command-line</a>
+                <Link href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Link</Link>
               </li>
             </ul>
           </div>
 
 
-          {/* 4th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Company</h6>
-            <ul className="text-sm">
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Home</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">About us</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Company values</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Pricing</a>
-              </li>
-              <li className="mb-2">
-                <a href="#0" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
-
+         
         </div>
 
         {/* Bottom area */}
@@ -80,7 +68,7 @@ export default function Footer() {
           </ul>
 
           {/* Copyrights note */}
-          <div className="text-sm text-gray-600 mr-4">&copy; Cruip.com. All rights reserved.</div>
+          <div className="text-sm text-gray-600 mr-4">&copy; Pionierzy Przyszłości</div>
 
         </div>
 
