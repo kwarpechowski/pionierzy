@@ -18,8 +18,9 @@ const Home = async () => {
   return (
    <>
      <section className="relative">
+     <Link href="/oferta" className="absolute z-20 -bottom-5 left-0 right-0 m-auto block width-100 bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-5 rounded" style={{width: 159}}>Sprawdź ofertę</Link>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+          <div className="pt-32 pb-20 md:pt-40">
             <div>
               <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter">Pionierzy Przyszłości</h1>
               <h2 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">Instytut Rozwoju Zawodowego</h2>
@@ -32,7 +33,7 @@ const Home = async () => {
       <div className="absolute inset-0 bg-gray-100 pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-20 pb-20">
+        <div className="pt-10 pb-20">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
               <h2 className="text-2xl md:text-3xl font-extrabold">
                 O nas
@@ -45,7 +46,7 @@ const Home = async () => {
       <div className="absolute inset-0 bg-white pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-20 pb-20">
+        <div className="pt-10 pb-20">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
               <h2 className="text-2xl md:text-3xl font-extrabold">
                 Dlaczego my
@@ -58,7 +59,7 @@ const Home = async () => {
       <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-20 pb-20">
+        <div className="pt-10 pb-20">
           <div className="mx-auto text-center pb-12 md:pb-16">
               <h2 className="text-2xl md:text-3xl font-extrabold pb-12 md:pb-16">
                 Opinie
