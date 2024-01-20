@@ -39,7 +39,7 @@ const Oferta = async () => {
                   Kursy dla dzieci i młodzieży
                   </h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {kids.map(({ id, attributes: { title, slug } }: any) => (
                 <Course key={id} title={title} slug={slug} />
               ))}
@@ -56,7 +56,7 @@ const Oferta = async () => {
                   Kursy podstawowe (certyfikowane)
                   </h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {basic.map(({ id, attributes: { title, slug } }: any) => (
                 <Course key={id} title={title} slug={slug}/>
               ))}
@@ -73,7 +73,7 @@ const Oferta = async () => {
                     Kursy Zawodowe -specialistyczne (certyfikowane)
                   </h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {pro.map(({ id, attributes: { title, slug } }: any) => (
                 <Course key={id} title={title} slug={slug} />
               ))}

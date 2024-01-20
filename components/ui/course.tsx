@@ -7,7 +7,7 @@ type Props = {
 
 export default function Course({ title, slug }: Props) {
     return (
-        <div className="relative border-2 border-gray-200 rounded bg-gray-100 flex flex-col p-4">
+        <div className="shadow-md rounded bg-white flex flex-col p-4">
             <h3 className="text-center flex-1 text-bold">
             {title}
             </h3>
