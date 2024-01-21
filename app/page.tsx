@@ -7,7 +7,7 @@ export const metadata = {
 }
 
 async function getOpinions() {
-  const res = await fetch(`http://srv23.mikr.us:20198/api/opinions?populate=*`)
+  const res = await fetch(`https://admin.ipionierzy.pl/api/opinions?populate=*`)
   return res.json()
 }
  

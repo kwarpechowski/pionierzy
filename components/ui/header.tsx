@@ -42,6 +42,9 @@ export default function Header() {
                 <Link href="/wspolpraca" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Współpraca</Link>
               </li>
               <li>
+                <Link href="/zespol" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Zespół</Link>
+              </li>
+              <li>
                 <Link href="/kontakt" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Kontakt</Link>
               </li>
             </ul>

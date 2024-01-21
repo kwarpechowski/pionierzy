@@ -7,7 +7,7 @@ export const metadata = {
 }
 
 async function getCourses(category: string) {
-  const res = await fetch(`http://srv23.mikr.us:20198/api/courses?filters%5Bcategory%5D%5B$eq%5D=${category}&populate=*`)
+  const res = await fetch(`https://admin.ipionierzy.pl/api/courses?filters%5Bcategory%5D%5B$eq%5D=${category}&populate=*`)
   return res.json()
 }
 

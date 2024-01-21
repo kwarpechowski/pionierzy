@@ -18,6 +18,13 @@ export default function About() {
           </div>
         </div>
     </section>
+    <section className="relative">
+      <div className="absolute inset-0 bg-gray-100 pointer-events-none" />
+
+      <div className="relative max-w-6xl mx-auto p-10">
+        treść
+      </div>
+    </section>
     </>
   );
 }
