@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Course from "../../components/ui/course";
 
 export const metadata = {
@@ -8,7 +7,7 @@ export const metadata = {
 }
 
 async function getCourses(category: string) {
-  const res = await fetch(`http://srv23.mikr.us:20198/api/courses?filters%5Bcategory%5D%5B$eq%5D=${category}`)
+  const res = await fetch(`http://srv23.mikr.us:20198/api/courses?filters%5Bcategory%5D%5B$eq%5D=${category}&populate=*`)
   return res.json()
 }
 
@@ -34,14 +33,14 @@ const Oferta = async () => {
         <div className="absolute inset-0 bg-gray-100 pointer-events-none" />
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
             <div className="pt-20 pb-20">
-              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+              <div className="text-center pb-12 md:pb-16">
                   <h2 className="text-2xl md:text-3xl font-extrabold">
                   Kursy dla dzieci i młodzieży
                   </h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              {kids.map(({ id, attributes: { title, slug } }: any) => (
-                <Course key={id} title={title} slug={slug} />
+              {kids.map(({ id, attributes: { title, slug, shortText, background: { data: { attributes: { url }}} } }: any) => (
+                <Course key={id} title={title} slug={slug} url={url} shortText={shortText}/>
               ))}
               </div>
             </div>
@@ -51,14 +50,14 @@ const Oferta = async () => {
         <div className="absolute inset-0 bg-white pointer-events-none" />
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
             <div className="pt-20 pb-20">
-              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+              <div className="text-center pb-12 md:pb-16">
                   <h2 className="text-2xl md:text-3xl font-extrabold">
                   Kursy podstawowe (certyfikowane)
                   </h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              {basic.map(({ id, attributes: { title, slug } }: any) => (
-                <Course key={id} title={title} slug={slug}/>
+              {basic.map(({ id, attributes: { title, slug, shortText, background: { data: { attributes: { url }}} } }: any) => (
+                <Course key={id} title={title} slug={slug} url={url} shortText={shortText}/>
               ))}
               </div>
             </div>
@@ -68,14 +67,14 @@ const Oferta = async () => {
         <div className="absolute inset-0 bg-gray-100 pointer-events-none" />
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
             <div className="pt-20 pb-20">
-              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+              <div className="text-center pb-12 md:pb-16">
                   <h2 className="text-2xl md:text-3xl font-extrabold">
                     Kursy Zawodowe -specialistyczne (certyfikowane)
                   </h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-              {pro.map(({ id, attributes: { title, slug } }: any) => (
-                <Course key={id} title={title} slug={slug} />
+              {pro.map(({ id, attributes: { title, slug, shortText, background: { data: { attributes: { url }}} } }: any) => (
+                <Course key={id} title={title} slug={slug} url={url} shortText={shortText} />
               ))}
               </div>
             </div>

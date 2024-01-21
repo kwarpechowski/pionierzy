@@ -10,7 +10,7 @@ export async function getStaticPaths() {
   const { data } = await res.json()
 
   return {
-    paths: data.map(({ attributes: { slug, title}}: any) => {
+    paths: data.map(({ attributes: { slug }}: any) => {
       return {
         params: {
           slug
@@ -44,6 +44,9 @@ const Course = (props: any) => {
               <h1 className="text-2xl md:text-3xl font-extrabold">Kurs</h1>
               <h2 className="text-2xl md:text-3xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">{props.attributes.title}</h2>
             </div>
+          </div>
+          <div>
+            {props.attributes.shortText}
           </div>
         </div>
     </section>
