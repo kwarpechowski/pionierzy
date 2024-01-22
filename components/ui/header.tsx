@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 import MobileMenu from './mobile-menu'
 
@@ -28,7 +29,20 @@ export default function Header() {
 
           {/* Site branding */}
           <div className="shrink-0 mr-4">
-            <Link href="/">Pionierzy Przyszłości</Link>
+            <Link href="/" className="flex">
+              <Image 
+                src="https://res.cloudinary.com/dx6dskule/image/upload/v1705936437/logo_b31dcdc4fb.jpg" 
+                alt="Pionierzy Przyszłości logo"
+                className="pointer-events-none"
+                width={50}
+                height={50}
+                priority={true}
+              />
+              <div className="px-5 flex flex-col text-sm md:text-base">
+                <h1 className="font-bold">Pionierzy Przyszłości</h1>
+                <h2>Instytut Rozwoju Zawodowego</h2>
+              </div>
+            </Link>
           </div>
 
           {/* Desktop navigation */}

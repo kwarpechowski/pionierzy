@@ -2,7 +2,7 @@ import Link from "next/link";
 import Quote from "../components/ui/quote"
 
 export const metadata = {
-  title: 'Testowa strona',
+  title: 'Pionierzy Przyszłości | Instytut Rozwoju Zawodowego',
   description: 'xyz',
 }
 
