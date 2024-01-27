@@ -4,11 +4,34 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
+    <>
+    <section className="relative">
+      <div className="absolute inset-0 bg-gray-900 pointer-events-none"/>
+      <div className="relative max-w-6xl mx-auto p-10">
+        <div className="grid grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4 dark:text-white">
+          <div>
+            <h2 className="text-2xl font-bold">
+                Nieprzegap aktualności
+            </h2>
+            <h3 className="text-xl">
+                Zasubskrybuj nasz newsletter
+            </h3>
+          </div>
+          <div className="flex items-center">
+              <form className="flex flex-1">
+                <input type="text"  className="bg-gray-700 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Twój adres" required />
+                <button type="submit" className="bg-blue-700 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded-lg ml-5">Wyślij</button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Top area: Blocks */}
-        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
+        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12">
 
           {/* 1st block */}
           <div className="sm:col-span-12 lg:col-span-3">
@@ -74,5 +97,6 @@ export default function Footer() {
 
       </div>
     </footer>
+    </>
   )
 }

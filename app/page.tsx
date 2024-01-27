@@ -33,7 +33,7 @@ const Home = async () => {
       <div className="absolute inset-0 bg-gray-100 pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-20">
+        <div className="py-10">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
               <h2 className="text-2xl md:text-3xl font-extrabold">
                 O nas
@@ -49,7 +49,7 @@ const Home = async () => {
       <div className="absolute inset-0 bg-white pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-20">
+        <div className="py-10">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
               <h2 className="text-2xl md:text-3xl font-extrabold">
                 Dlaczego my
@@ -69,10 +69,10 @@ Inspirujące środowisko które pobudza do ciągłej nauki i innowacji, wspieraj
       </div>
     </section>
     <section className="relative">
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" />
+      <div className="absolute inset-0 bg-gray-100 pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-20">
+        <div className="py-10">
           <div className="mx-auto text-center pb-12 md:pb-16">
               <h2 className="text-2xl md:text-3xl font-extrabold pb-12 md:pb-16">
                 Opinie
