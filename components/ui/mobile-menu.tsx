@@ -64,7 +64,10 @@ export default function MobileMenu() {
           leaveTo="opacity-0"
         >
           <ul className="px-5 py-2">
-          <li>
+            <li>
+              <Link href="/aktualnosci" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Aktualności</Link>
+            </li>
+            <li>
               <Link href="/oferta" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Oferta</Link>
             </li>
             <li>
